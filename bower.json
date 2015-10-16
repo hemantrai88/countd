@@ -1,0 +1,23 @@
+{
+  "name": "countd",
+  "version": "0.0.0",
+  "authors": [
+    "Hemant Rai <hemantrai1988@gmail.com>"
+  ],
+  "description": "Count Down to ...",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "material-design-lite": "latest",
+    "underscore": "latest",
+    "jsTimezoneDetect": "latest",
+    "countdownjs": "https://github.com/mckamey/countdownjs.git#v2.6.0"
+  }
+}
