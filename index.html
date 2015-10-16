@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="bower_components/countdownjs/countdown.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="bower_components/material-design-lite/material.min.css">
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.deep_orange-red.min.css" /> 
 
 	<script type="text/javascript">
 		var ampm = 1;
@@ -105,15 +106,14 @@
 
 				splitDate = dateProvided.split('/');
 				dd = splitDate[0];
-				mm = splitDate[1];
+				mm = splitDate[1]-1;
 				yy = splitDate[2];
-				console.log(dd, mm, yy);
 
 				if(ampm===2){
 					if(hrsProvided===12){
 						hrs = hrsProvided;
 					}else{
-						hrs = hrsProvided+12;	
+						hrs = parseInt(hrsProvided)+12;	
 					}
 					
 				}else{
@@ -126,21 +126,12 @@
 				}
 
 				var start = new Date();
-				var end = new Date(yy, mm, dd, hrs, minsProvided);
-
-				console.log(start);
-
-				console.log(yy, mm, dd, hrs, minsProvided);
-
-				console.log(end);
+				var end = new Date(yy, mm, dd, hrs, minsProvided, 0, 0);
 
 				var cd = countdown( start, end, countdown.ALL);
 
 				console.log(cd);
 
-				_.delay(function(){
-					console.log(cd);
-				}, 1000);
 			});
 		});
 	</script>
