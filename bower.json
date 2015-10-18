@@ -18,6 +18,8 @@
     "material-design-lite": "latest",
     "underscore": "latest",
     "jsTimezoneDetect": "latest",
-    "countdownjs": "https://github.com/mckamey/countdownjs.git#v2.6.0"
+    "countdownjs": "https://github.com/mckamey/countdownjs.git#v2.6.0",
+    "progressbar.js": "latest",
+    "mjolnic-bootstrap-colorpicker": "latest"
   }
 }

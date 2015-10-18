@@ -1,0 +1,134 @@
+		body{
+			font-family: 'Roboto Slab', serif;
+		}
+
+		.countCard{
+			display: block;
+			margin: auto;
+			width: 60%;
+		}
+
+		.countCardLabel{
+			font-family: monospace;
+			color: #666;
+			text-align: center;
+		}
+
+		.countToDiv{
+			display: block;
+			margin: auto;
+		}
+
+		.CDto{
+			    display: inline-block;	
+			    margin-right: 1%;
+			    margin-left: 5%;
+		}
+
+		.toDate{
+			font-size: 200%;
+			font-weight: 700;
+			text-align: center;
+		}
+
+		.toHrs{
+			font-size: 200%;
+			font-weight: 700;
+		}
+
+		.toMins{
+			font-size: 200%;
+			font-weight: 700;
+		}
+
+		.toAmPmDiv{
+			font-size: 200%;
+			font-weight: 700;
+		}
+
+		.countButton{
+			margin-left: 5%;
+			font-size: 200%;
+			font-weight: 700;
+		}
+
+		.DTseparator{
+			display: inline-block;
+			margin: 0 1%;
+		}
+
+		.toDiv{
+			text-align: center;
+			display: block;
+			margin: auto;
+		}
+
+		.toTimeDiv{
+		    display: block;
+		    width: 50%;
+		    margin: auto;
+		    text-align: center;
+		}
+
+		.toHrsDiv{
+			width: 15%;
+		}
+
+		.toMinsDiv{
+			width: 15%;
+		}
+
+		.invalidInput{
+			background: darkorange;
+		}
+
+		.errorMessage {
+		    color: darkorange;
+		    font-size: 75%;
+		}
+
+		#toDateFormat{
+			font-size: 200%;
+			color: darkorange;
+			margin-bottom: 5%;
+			display: none;
+		}
+
+		.clockDiv{
+			display: none;
+			margin: auto;
+			width: 50%;
+			height: 5em;
+		}
+
+		.clocks{
+			display: inline-block;
+			width: 24%;
+		}
+
+
+		#showDays{
+		}
+
+		#showHours{
+		}	
+
+		#showMinutes{
+		}
+
+		#showSeconds{
+		}
+
+		p.progressbar-text{
+			font-size: 5em;
+		}
+
+		.clockLabel {
+		    font-size: 2.5em;
+		    text-align: center;
+		    color: #333;
+		}
+
+		.counterOptions{
+			text-align: center;
+		}
