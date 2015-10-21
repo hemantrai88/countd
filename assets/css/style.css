@@ -132,3 +132,9 @@
 		.counterOptions{
 			text-align: center;
 		}
+
+		.customizeClock{
+		    position: relative;
+		    display: none;
+		    margin: auto;
+		}

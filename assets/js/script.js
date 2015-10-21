@@ -54,9 +54,9 @@
 		    $('#toDate').val(today);
 
 		    var date = new Date();
-		    var hrs = date.getHours();
-			var mins = date.getMinutes();
-			ampm = hrs >= 12 ? 2 : 1;
+		    var hrs = 11;
+			var mins = 59;
+			ampm = 2;
 			if(ampm==1){
 				$('#toAmPm').html('AM');
 			}else{
@@ -149,6 +149,10 @@
 
 			$('#startCount').click(function(){
 				secondId = setInterval(getCounter,1000);
+			});
+
+			$('#customizeClockButton').click(function(){
+				$('#customizeClockDiv').show();
 			});
 
 			$('#chooseColor').colorpicker();
