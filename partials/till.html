@@ -1,0 +1,70 @@
+<script type="text/javascript" src="assets/js/timer.js"></script>
+
+  <div class="countCard">
+  <div class="">
+    <div class="formTextDiv">
+      <h3 class="countCardLabel">since</h3>
+      <div id="countTo" class="countToDiv mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+  	    <input class="mdl-textfield__input countToWhat" type="text" id="countToWhat" />
+  	    <label class="mdl-textfield__label" for="countToWhat"></label>
+  	  </div>
+    </div>
+    <div class="formTextDiv">
+    	<h3 class="countCardLabel">&nbsp;&nbsp;&nbsp;on</h3>
+    	<div id="toDateDiv" class="toDiv mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    	  <div id="toDateFormat" class="errorMessage">dd/mm/yyyy</div>
+    	  <input class="mdl-textfield__input toDate" maxlength="10" type="text" id="toDate" />
+    	  <label class="mdl-textfield__label" for="toDate"></label>
+    	  <div id="toDateError" class="errorMessage"></div>
+    	</div>
+    </div>
+    <div class="formTextDiv">
+	    <h3 class="countCardLabel atLabel">at</h3>
+      <div class="timeWrapperDiv">
+        <div class="timeFieldsDiv timeFieldsLeft">
+          <input class="mdl-textfield__input toHrs" type="number" min="0" max="24" maxlength="2" id="toHrs" value="00" />
+          <label class="mdl-textfield__label" for="toHrs"></label>
+        </div>
+        <h3 class="DTseparator">:</h3>
+        <div class="timeFieldsDiv">
+          <input class="mdl-textfield__input toMins" type="number" min="0" max="60" maxlength="2" id="toMins" value="00" />
+          <label class="mdl-textfield__label" for="toMins"></label>  
+        </div>
+        <select id="selectAmPm" class="selectAmPm">
+          <option value="1">AM</option>
+          <option value="2">PM</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="counterOptions mdl-card__actions mdl-card--border">
+    <a id="startCount" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+		Start counting
+	</a>
+
+	<a id="customizeClockButton" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+		Customize clock
+	</a>
+  </div>
+</div>
+
+<div id="customizeClockDiv" class="customizeClock mdl-card mdl-shadow--4dp">
+  <div class="mdl-card__title mdl-card--expand">
+    <h2 class="mdl-card__title-text">Customize clock</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      View Updates
+    </a>
+  </div>
+</div>
+
+
+
+
+
+ 
+ <input type="text" id="chooseColor">
+ <button id="switchColor" class="mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect">Change Color</button>
