@@ -1,229 +1,183 @@
-		body{
-			font-family: 'Montserrat', sans-serif;
-		}
-
-		.topTextDiv{
-			font-size: 3em;
-		    font-weight: 700;
-		    text-align: center;
-		    display: inline-flex;
-		    padding: 2% 42%;
-		}
-
-		.optionHolder{
-			width: 100%;
-			display: inline-block;
-		}
-
-		.optionDiv{
-			min-height: 18em;
-			width: 49.8%;
-			display: inline-block;
-			cursor: pointer;
-			-webkit-transition: width 0.75s ease-in-out;
-		    -moz-transition: width 0.75s ease-in-out;
-		    -o-transition: width 0.75s ease-in-out;
-		    transition: width 0.75s ease-in-out;
-		}
-
-		.sinceDiv{
-			background-color: #80cbc4;
-		}
-
-		.tillDiv{
-			background-color: #ff7043;
-			float: right;
-			}
-
-		.innerDiv{
-			position: absolute;
-		    height: 27%;
-		    margin: 12%;
-		    width: 25%;
-		    text-align: center;
-		    color: #333;
-		}
-
-		.optionIcon{
-			font-size: 10em !important;
-		}
-
-		.optionIconText{
-			display: block;
-		    font-size: 2em;
-		    font-weight: 700;
-		}
-
-		.countCard{
-			display: block;
-			margin: auto;
-			width: 60%;
-		}
-
-		.countCardLabel{
-			color: #333;
-			text-align: center;
-			font-weight: 700;
-			display: inline-block;
-			vertical-align: text-bottom;
-		}
-
-		.formTextDiv{
-			text-align: center;
-			vertical-align: bottom;
-		}
-
-		.countToDiv{
-			margin: 0 5%;
-		}
-
-		.CDto{
-			    display: inline-block;	
-			    margin-right: 1%;
-			    margin-left: 5%;
-		}
-
-		.toDate{
-			font-size: 200%;
-			font-weight: 700;
-			text-align: center;
-		}
-
-		.timeWrapperDiv{
-			display: inline-block;
-			text-align: left;
-			width: 44%;
-		}
-
-		.toHrs{
-			width: 100%;
-			font-size: 200%;
-			font-weight: 700;
-		}
-
-		.toMins{
-			font-size: 200%;
-			font-weight: 700;
-		}
-
-		.toAmPmDiv{
-			font-size: 200%;
-			font-weight: 700;
-		}
-
-		.countButton{
-			margin-left: 5%;
-			font-size: 200%;
-			font-weight: 700;
-		}
-
-		.DTseparator{
-			display: inline-block;
-			margin: 0 1%;
-			vertical-align: top;
-		}
-
-		.toDiv{
-			margin: 0 5%;
-		}
-
-		.timeFieldsDiv{
-			display: inline-block;
-			width: 20%;
-			margin-left: 2%;
-		}
-
-		.timeFieldsLeft{
-			margin-left: 15%;
-		}
-
-		.atLabel{
-			vertical-align: inherit;
-		}
-
-		.toTimeDiv{
-		    display: block;
-		    width: 50%;
-		    margin: auto;
-		    text-align: center;
-		}
-
-		.toHrsDiv{
-			width: 15%;
-		}
-
-		.toMinsDiv{
-			width: 15%;
-		}
-
-		.selectAmPm{
-			background-color: rgba(255, 255, 255, 0.9);
-		    border: 1px solid #f2f2f2;
-		    border-radius: 2px;
-		    height: 3rem;
-		    padding: 5px;
-		    width: 33%;
-		    vertical-align: text-bottom;
-		}
-
-		.invalidInput{
-			background: #e53935;
-		}
-
-		.errorMessage {
-		    color: #e53935;
-		    font-size: 75%;
-		}
-
-		#toDateFormat{
-			font-size: 200%;
-			font-weight: 700;
-			color: #e53935;
-			margin-bottom: 5%;
-			display: none;
-		}
-
-		.clockDiv{
-			display: none;
-			margin: auto;
-			width: 50%;
-			height: 5em;
-		}
-
-		.clocks{
-			display: inline-block;
-			width: 24%;
-		}
-
-
-		#showDays{
-		}
-
-		#showHours{
-		}	
-
-		#showMinutes{
-		}
-
-		#showSeconds{
-		}
-
-		p.progressbar-text{
-			font-size: 5em;
-		}
-
-		.clockLabel {
-		    font-size: 2.5em;
-		    text-align: center;
-		    color: #333;
-		}
-
-		.counterOptions{
-			text-align: center;
-		}
-
-		.customizeClock{
-		    position: relative;
-		    display: none;
-		    margin: auto;
-		}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+.topTextDiv {
+	font-size: 3em;
+	font-weight: 700;
+	text-align: center;
+	display: inline-flex;
+	padding: 2% 42%;
+}
+.optionHolder {
+	width: 100%;
+	display: inline-block;
+}
+.optionDiv {
+	min-height: 18em;
+	width: 49.8%;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-transition: width 0.75s ease-in-out;
+	-moz-transition: width 0.75s ease-in-out;
+	-o-transition: width 0.75s ease-in-out;
+	transition: width 0.75s ease-in-out;
+}
+.sinceDiv {
+	background-color: #80cbc4;
+}
+.tillDiv {
+	background-color: #ff7043;
+	float: right;
+}
+.innerDiv {
+	position: absolute;
+	height: 27%;
+	margin: 12%;
+	width: 25%;
+	text-align: center;
+	color: #333;
+}
+.optionIcon {
+	font-size: 10em !important;
+}
+.optionIconText {
+	display: block;
+	font-size: 2em;
+	font-weight: 700;
+}
+.countCard {
+	display: block;
+	margin: auto;
+	width: 60%;
+}
+.countCardLabel {
+	color: #333;
+	text-align: center;
+	font-weight: 700;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+.formTextDiv {
+	text-align: center;
+	vertical-align: bottom;
+}
+.countToDiv {
+	margin: 0 5%;
+}
+.CDto {
+	display: inline-block;
+	margin-right: 1%;
+	margin-left: 5%;
+}
+.toDate {
+	font-size: 200%;
+	font-weight: 700;
+	text-align: center;
+}
+.timeWrapperDiv {
+	display: inline-block;
+	text-align: left;
+	width: 44%;
+}
+.toHrs {
+	width: 100%;
+	font-size: 200%;
+	font-weight: 700;
+}
+.toMins {
+	font-size: 200%;
+	font-weight: 700;
+}
+.toAmPmDiv {
+	font-size: 200%;
+	font-weight: 700;
+}
+.countButton {
+	margin-left: 5%;
+	font-size: 200%;
+	font-weight: 700;
+}
+.DTseparator {
+	display: inline-block;
+	margin: 0 1%;
+	vertical-align: top;
+}
+.toDiv {
+	margin: 0 5%;
+}
+.timeFieldsDiv {
+	display: inline-block;
+	width: 20%;
+	margin-left: 2%;
+}
+.timeFieldsLeft {
+	margin-left: 15%;
+}
+.atLabel {
+	vertical-align: inherit;
+}
+.toTimeDiv {
+	display: block;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+.toHrsDiv {
+	width: 15%;
+}
+.toMinsDiv {
+	width: 15%;
+}
+.selectAmPm {
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	height: 3rem;
+	padding: 5px;
+	width: 33%;
+	vertical-align: text-bottom;
+}
+.invalidInput {
+	background: #e53935;
+}
+.errorMessage {
+	color: #e53935;
+	font-size: 75%;
+}
+#toDateFormat {
+	font-size: 200%;
+	font-weight: 700;
+	color: #e53935;
+	margin-bottom: 5%;
+	display: none;
+}
+.clockDiv {
+	display: none;
+	margin: auto;
+	width: 50%;
+	height: 5em;
+}
+.clocks {
+	display: inline-block;
+	width: 24%;
+}
+p.progressbar-text {
+	font-size: 5em;
+}
+.clockLabel {
+	font-size: 2.5em;
+	text-align: center;
+	color: #333;
+}
+.counterOptions {
+	text-align: center;
+}
+.customizeClock {
+	position: relative;
+	display: none;
+	margin: auto;
+}
+.colorpicker {
+	box-shadow: 1px 0 5px 10px rgba(0, 0, 0, 0.65);
+	width: 10%;
+}
