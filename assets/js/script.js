@@ -9,7 +9,7 @@
 
 		$(document).ready(function() {
 
-			/*			var h = $(window).height();
+						var h = $(window).height();
 						var m = h*0.10;
 						console.log(m);
 						h = h*0.75;
@@ -17,8 +17,8 @@
 						$('#sinceDiv').css('height', h);
 						$('#tillDiv').css('height', h);
 						$('.innerDiv').css('margin-top', m);
-			*/
-			/*$(window).resize(function(){
+			
+			$(window).resize(function(){
 				var h = $(window).height();
 
 				var m = h*0.10;
@@ -30,7 +30,7 @@
 				$('#tillDiv').css('height', h);
 				$('.innerDiv').css('margin-top', m);
 
-			});*/
+			});
 
 			daysClock = new ProgressBar.Circle('#daysClock', {
 				duration: 200,
@@ -105,7 +105,8 @@
 					context: page_base
 				}).done(function(data) {
 					$('#sinceDiv').html(data);
-					$('#sinceDiv').css('height', 'auto');
+					var h = $(window).height();
+					$('#sinceDiv').css('height', h*0.75);
 					active = 2;
 					onTimerLoad();
 				});
@@ -126,7 +127,8 @@
 					context: page_base
 				}).done(function(data) {
 					$('#tillDiv').html(data);
-					$('#tillDiv').css('height', 'auto');
+					var h = $(window).height();
+					$('#tillDiv').css('height', h*0.75);
 					active = 3;
 					onTimerLoad();
 				});
@@ -263,11 +265,25 @@
 
 
 			$('#startCount').click(function() {
+
+				var sinceTill = '';
+
 				if (active == 2) {
 					secondId = setInterval(getPastCounter, 1000);
+					sinceTill = 'Since';
 				} else if (active == 3) {
 					secondId = setInterval(getFutureCounter, 1000);
+					sinceTill = 'Till';
 				}
+
+				$('#clockEventName').html($('#countToWhat').val());
+				$('#clockTillSince').html(sinceTill);
+
+				_.delay(function(){
+					$('#showClock').css('height', $('#showDays').height()*1.2);
+					console.log($('#showDays').height()*1.2);
+				}, 1000);
+
 				$('#showPage').fadeOut();
 			});
 
@@ -279,7 +295,7 @@
 
 			$('#switchColor').click(function() {
 
-				var selectedColor = 'rgba(255,146,68,0.63)';
+				var selectedColor = $('#chooseColor').val(); //'rgba(255,146,68,0.63)';
 
 				daysClock.destroy();
 
@@ -324,6 +340,8 @@
 					trailWidth: 1.0,
 					easing: 'easeInOut'
 				});
+
+				$('.clockLabel').css('color', selectedColor);
 			});
 
 
