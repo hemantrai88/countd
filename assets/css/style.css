@@ -23,10 +23,10 @@ body {
 	transition: width 0.75s ease-in-out;
 }
 .sinceDiv {
-	background-color: #80cbc4;
+	/*background-color: #80cbc4;*/
 }
 .tillDiv {
-	background-color: #ff7043;
+	/*background-color: #ff7043;*/
 	float: right;
 }
 .innerDiv {
@@ -129,12 +129,11 @@ body {
 	width: 15%;
 }
 .selectAmPm {
-	background-color: rgba(255, 255, 255, 0.9);
-	border: 1px solid #f2f2f2;
+	border: 1px solid #333;
 	border-radius: 2px;
 	height: 3rem;
 	padding: 5px;
-	width: 33%;
+	width: 30%;
 	vertical-align: text-bottom;
 }
 .invalidInput {
@@ -180,4 +179,5 @@ p.progressbar-text {
 .colorpicker {
 	box-shadow: 1px 0 5px 10px rgba(0, 0, 0, 0.65);
 	width: 10%;
+	position: absolute !important;
 }

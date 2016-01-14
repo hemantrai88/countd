@@ -90,7 +90,7 @@
 				$('#tillDiv').removeClass('mdl-shadow--2dp');
 			});
 
-			$('#sinceInnerDiv').click(function() {
+			$('#sinceDiv').click(function() {
 				$('#sinceDiv').css("width", "100%");
 				$('#tillDiv').css("width", "0");
 				$('#sinceDiv').html('');
@@ -112,7 +112,7 @@
 				});
 			});
 
-			$('#tillInnerDiv').click(function() {
+			$('#tillDiv').click(function() {
 				$('#tillDiv').css("width", "100%");
 				$('#sinceDiv').css("width", "0");
 				$('#tillDiv').html('');
